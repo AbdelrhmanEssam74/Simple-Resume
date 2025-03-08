@@ -141,10 +141,6 @@ nav ul li a:hover::after {
 
 }
 
-
-
-
-
 .profile-pic img {
     width: 300px;
     height: auto;
@@ -179,4 +175,111 @@ nav ul li a:hover::after {
 
 body:not(:has(:target)) #page1 {
     display: flex;
+}
+/*page 2*/
+#page2{
+    flex-direction: column;
+     align-items: center;
+}
+#page2 h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: var(--tertiary-color);
+    position: relative;
+}
+#page2 .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 772px) {
+    #page2 .box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+    #page2 .box-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+#page2 .box {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    cursor: zoom-in;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#page2 .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+
+#page2 #box1::before {
+    background-image: url("../assets/images/coding.jpg");
+}
+
+#page2 #box2::before {
+    background-image: url("../assets/images/reading.jpg");
+}
+#page2 #box3::before {
+    background-image: url("../assets/images/traveling.jpg");
+}
+#page2 .box:hover::before {
+    transform: scale(1.2);
+}
+
+#page2 .box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--headline-color);
+    position: relative;
+    z-index: 1;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+#page2 .box p {
+    font-size: 16px;
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--text-color);
+    margin-top: 500px;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#page2 .box:hover p {
+    opacity: 1;
+    margin-top: 0;
 }
