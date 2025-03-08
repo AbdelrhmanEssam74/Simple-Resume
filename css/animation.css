@@ -54,3 +54,44 @@
         right: 10%;
     }
 }
+
+#gift_img_wrapper::before {
+    content: "Guess What Will Appear After 5s!";
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 300%;
+    height: 100%;
+    text-align: center;
+    animation: changeContent 5s ease-in-out 1s forwards;
+}
+
+@keyframes changeContent {
+    20%{
+        content: "Guess What Will Appear After 4s!";
+    }
+    40%{
+        content: "Guess What Will Appear After 3s!";
+    }
+    60%{
+        content: "Guess What Will Appear After 2s!";
+    }
+    80%{
+        content: "Guess What Will Appear After 1s!";
+    }
+    100%{
+        content: "Surprise!";
+    }
+
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
