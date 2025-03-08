@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Resume</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
   <!--  Font Awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--  Google Fonts  -->
@@ -12,38 +13,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Side Navbar   -->
+
+<!-- Sidebar Navigation -->
 <nav>
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <a href=" ">
-          <img src="assets/images/logo.png" alt="logo"
-               width="30"
-          >
-        </a>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span>
-          </a>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-face-smile"></i><span>Hobbies</span>
-          </a>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span>
-          </a>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span>
-          </a>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span>
-          </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <ul>
+    <li><a href="#page1">Home</a></li>
+    <li><a href="#page2">About</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Resume</a></li>
+  </ul>
 </nav>
+
+<!-- page1 -->
+<div id="page1" class="page container">
+  <div class="info">
+    <h1>Abdelrhman Essam</h1>
+    <h2>Full Stack Developer PHP</h2>
+  </div>
+  <div class="profile-pic">
+    <img src="assets/images/me.png" alt="Abdelrhman">
+  </div>
+</div>
+<!-- page2 -->
+<div id="page2" class="page container">
+  <h2>About</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel condimentum ex, et ullamcorper neque. Nullam semper lacinia felis, at facilisis justo bibendum at. Donec vel lobortis felis. Sed id libero at ipsum ultricies volutpat. Nulla facilisi. Nullam et dolor sed urna congue scelerisque. Sed vel neque vel felis dapibus pharetra.</p>
+</div>
 </body>
 </html>
