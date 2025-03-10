@@ -525,12 +525,8 @@ input:checked + form + .thank-you {
     scroll-behavior: smooth;
     overflow-x: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
-#page5 .slider::-webkit-scrollbar {
-    display: none;
-}
 
 #page5 .slide {
     flex: 0 0 100%;
